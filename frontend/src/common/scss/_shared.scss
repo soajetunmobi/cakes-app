@@ -1,0 +1,231 @@
+.buttons-container {
+  display: flex;
+
+  &--flex-end {
+    justify-content: flex-end;
+  }
+
+  &--center {
+    justify-content: center;
+  }
+
+  &--space-between {
+    justify-content: space-between;
+  }
+}
+
+.cursor--pointer {
+  cursor: pointer;
+}
+
+.no-border {
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+}
+
+.button--w250 {
+  width: px-to-rem(250px);
+}
+
+.button--primary {
+  font-size: 1.125rem;
+  line-height: 1.33333;
+  font-family: "Trebuchet MS",sans-serif;
+  font-weight: 700;
+  box-shadow: 0 0 0 3px transparent;
+  transition-duration: .2s;
+  transition-property: box-shadow,background-color,border-color,color;
+  transition-timing-function: ease-out;
+  background-color: $dark-grey-color;
+  background-image: none;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  color: $white-color;
+  min-height: 48px;
+  min-width: 48px;
+  padding: .5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+}
+
+.button--secondary {
+  background-color: rgba(0,0,0,0);
+  background-image: none;
+  border-radius: 2px;
+  border: 2px solid $dark-grey-color;
+  color: $dark-grey-color;
+  font-size: 1.125rem;
+  line-height: 1.33333;
+  font-family: "Trebuchet MS",sans-serif;
+  font-weight: 700;
+  box-shadow: 0 0 0 3px transparent;
+  transition-duration: .2s;
+  transition-property: box-shadow,background-color,border-color,color;
+  transition-timing-function: ease-out;
+  min-height: 48px;
+  min-width: 48px;
+  padding: .5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+}
+
+.button--add {
+  position: relative;
+  border-width: 2px;
+  border-style: solid;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s all;
+
+  &:before {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-left-width: 2px;
+    border-left-style: solid;
+    left: 9px;
+    top: 5px;
+  }
+
+  &:after {
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-right-width: 2px;
+    border-right-style: solid;
+    left: 5px;
+    top: 9px;
+  }
+
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 4px;
+  }
+}
+
+.button--plus {
+  background-color: $dark-grey-color;
+  font-size: 16px;
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 999px;
+  position: relative;
+
+  &:after,
+  &:before {
+    content: "";
+    display: block;
+    background-color: $dark-grey-color;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:before {
+    height: 1em;
+    width: 0.2em;
+  }
+
+  &:after {
+    height: 0.2em;
+    width: 1em;
+  }
+}
+
+
+:root {
+  --footer-height: 60px;
+  --logo-height: 4rem;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: "Trebuchet MS", sans-serif, 'Droid Sans', 'Helvetica Neue';
+}
+
+.page__title {
+  text-align: center;
+}
+
+.circle {
+  width: px-to-rem(50px);
+  line-height: px-to-rem(46px);
+  border-radius: 50%;
+  text-align: center;
+  font-size: px-to-rem(24px);
+  border: 2px solid #666;
+  display: inline-block;
+  vertical-align: middle;
+  margin: px-to-rem(10px);
+
+  &:hover, &.active {
+    background-color: $dark-grey-color;
+    color: $white-color;
+  }
+
+  &__dark-grey {
+    background-color: $dark-grey-color;
+    color: $white-color;
+
+    &:hover {
+      background-color: $white-color;
+      color: $dark-grey-color;
+    }
+  }
+}
+
+.margin {
+  &--bottom {
+    margin-bottom: px-to-rem(16px);
+
+    &--double {
+      margin-bottom: px-to-rem(32px);
+    }
+  }
+}
+
+.invalid-feedback {
+  color: $dark-red-color;
+  font-size: px-to-rem(12px);
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: px-to-rem(400px);
+  background: $white-color;
+  border: 1px solid #dee2e6;
+  border-radius: px-to-rem(10px);
+  overflow: hidden;
+  padding: 72px 55px 90px;
+
+  @include respond-to('medium') {
+    max-width: px-to-rem(790px);
+    width: 100%;
+
+  }
+}
+
+
+
+
+

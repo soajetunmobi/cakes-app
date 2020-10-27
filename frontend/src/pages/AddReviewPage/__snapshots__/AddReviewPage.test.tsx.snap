@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Add review component it renders correctly 1`] = `
+<div
+  className="form-wrapper"
+>
+  <h2
+    className="page__title"
+  >
+    Add comment
+  </h2>
+  <form
+    className="form"
+    name="form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="form__group"
+    >
+      <label>
+        Name
+      </label>
+      <input
+        className="form__input"
+        data-testid="review-name"
+        name="name"
+        onBlur={[Function]}
+        onChange={[Function]}
+        required={true}
+        type="text"
+        value=""
+      />
+      <div
+        className="invalid-feedback"
+        data-testid="name-error"
+      >
+        Cake name is required
+      </div>
+    </div>
+    <div
+      className="form__group"
+    >
+      <label>
+        Image url
+      </label>
+      <input
+        className="form__input"
+        data-testid="review-image"
+        name="imageUrl"
+        onBlur={[Function]}
+        onChange={[Function]}
+        required={true}
+        type="text"
+        value=""
+      />
+      <div
+        className="invalid-feedback"
+        data-testid="image-error"
+      >
+        Image url is required
+      </div>
+    </div>
+    <div
+      className="form__group"
+    >
+      <label>
+        Comment
+      </label>
+      <textarea
+        className="form__textarea"
+        data-testid="review-comment"
+        maxLength={200}
+        name="comment"
+        onBlur={[Function]}
+        onChange={[Function]}
+        required={true}
+        rows={2}
+        value=""
+      />
+      <div
+        className="invalid-feedback"
+        data-testid="comment-error"
+      >
+        Comment is required (At least 5 characters and at most 200 characters)
+      </div>
+    </div>
+    <div
+      className="form__group no-border"
+    >
+      <label>
+        Yum factor
+      </label>
+      <div>
+        <span
+          className="circle cursor--pointer"
+          data-testid="yum-1"
+          id="1"
+          onClick={[Function]}
+        >
+          1
+        </span>
+        <span
+          className="circle cursor--pointer"
+          data-testid="yum-2"
+          id="2"
+          onClick={[Function]}
+        >
+          2
+        </span>
+        <span
+          className="circle cursor--pointer"
+          data-testid="yum-3"
+          id="3"
+          onClick={[Function]}
+        >
+          3
+        </span>
+        <span
+          className="circle cursor--pointer"
+          data-testid="yum-4"
+          id="4"
+          onClick={[Function]}
+        >
+          4
+        </span>
+        <span
+          className="circle cursor--pointer"
+          data-testid="yum-5"
+          id="5"
+          onClick={[Function]}
+        >
+          5
+        </span>
+      </div>
+      <div
+        className="invalid-feedback"
+        data-testid="error-yumfactor"
+      >
+        Yum factor is required
+      </div>
+    </div>
+    <div
+      className="buttons-container buttons-container--space-between"
+    >
+      <button
+        className="button--secondary"
+        onClick={[Function]}
+      >
+        Cancel
+      </button>
+      <button
+        className="button--primary"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+`;

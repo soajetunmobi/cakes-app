@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders correctly 1`] = `
+<footer
+  className="footer"
+>
+  <span>
+    Cake Reviews
+  </span>
+  <br />
+  2020
+</footer>
+`;

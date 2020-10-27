@@ -1,0 +1,32 @@
+version: '3.8'
+services:
+  db:
+    image: 'postgres:10.6-alpine'
+    environment:
+      POSTGRES_USER: 'cake-app'
+    ports:
+    - '15432:5432'
+  backend:
+    build:
+      context: ./backend
+      dockerfile: 'Dockerfile'
+    ports:
+    - '8080:8080'
+    environment:
+      DB_HOST: 'db'
+      DB_PORT: '5432'
+    volumes:
+      - ./backend:/backend
+    depends_on:
+      - 'db'
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: 'Dockerfile'
+    ports:
+    - '80:80'
+    depends_on:
+      - 'backend'
+
+#Note to build frontend assets:
+# docker run -v `pwd`/frontend:/frontend -w /frontend node:10 bash -c "yarn && yarn build"

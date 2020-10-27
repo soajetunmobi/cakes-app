@@ -1,0 +1,22 @@
+$breakpoints: (
+  'small':  ( min-width:  767px ),
+  'medium': ( min-width:  992px ),
+  'large':  ( min-width: 1200px )
+) !default;
+
+$white-color: #FFF;
+$v-light-grey: #f3f3f3;
+$green-color: #00b300;
+$dark-grey-color: #4c4c4c;
+$dark-red-color: #8b0000;
+
+$font-weight-bold: 700 !default;
+
+$browser-font-size-default: 16;
+$browser-font-size-default-px: $browser-font-size-default * 1px;
+
+$space-value: 8 !default;
+$space-px: $space-value * 1px !default;
+$space: ($space-value / $browser-font-size-default) * 1rem !default;
+
+$font-family: 'Trebuchet MS', sans-serif !default;

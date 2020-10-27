@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders correctly 1`] = `
+Array [
+  <div
+    className="header"
+  >
+    <h1
+      className="logo"
+    >
+      Cake Reviews
+    </h1>
+  </div>,
+  <main
+    className="content"
+  >
+    <div
+      className="loader"
+    />
+  </main>,
+  <footer
+    className="footer"
+  >
+    <span>
+      Cake Reviews
+    </span>
+    <br />
+    2020
+  </footer>,
+]
+`;

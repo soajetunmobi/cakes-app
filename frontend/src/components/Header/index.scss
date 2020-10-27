@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.logo {
+    font-size: 2rem;
+    text-align: center;
+    line-height: var(--logo-height);
+    height: var(--logo-height);
+    margin: 0;
+}

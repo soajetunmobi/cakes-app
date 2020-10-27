@@ -1,0 +1,36 @@
+
+
+.form {
+   width: 100%;
+
+  &__group {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin-bottom: 37px;
+}
+
+  &__input {
+    display: block;
+    width: 100%;
+    font-size: px-to-rem(15px);
+    color: #555;
+    line-height: 1.2;
+    border: none;
+    outline: none;
+    height: px-to-rem(45px);
+  }
+
+  &__textarea {
+    min-height: px-to-rem(80px);
+    padding-top: 13px;
+    padding-bottom: 13px;
+    display: block;
+    width: 100%;
+    font-size: px-to-rem(15px);
+    color: #555;
+    line-height: 1.2;
+    border: none;
+    outline: none;
+  }
+}
